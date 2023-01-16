@@ -414,12 +414,44 @@
 
                     </ul>
                 </div>
+                <div class="footer-column">
+                    <div class="sing-up">ZAPISZ SIĘ DO NEWSLETTERA</div>
+                        <form class="singup" name="signup_form" autocomplete="on" novalidate>
+                            <label>
+                                <input class="email-window" type="email" name="email" placeholder="E-mail" />
+                            </label>
+                            <button class="email-button" type="submit">Zapisz się <svg class="send" width="24" height="24">
+                                <use href="images/icons.svg#icon-icon-send"></use>
+                            </svg></button>
+                        </form>
+                </div>
             </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal" >
             <button type="button" class="close-bg" data-modal-close>X</button>
+            <p class="information">Zostaw swoje dane w formularzu poniżej</p>
+            <form>
+            <label>Imie
+                <input class="form-windows" type="text" name="username"  />
+            </label>
+            <label>Telefon
+                <input class="form-windows" type="tel" name="phone_number"  />
+            </label>
+            <label>Email
+                <input class="form-windows" type="email" name="email"  />
+            </label>
+            <label>Komentarz
+                <textarea class="form-window" name="feedback" row="5"></textarea>
+            </label>
+            <div class="checkbox">
+            <label>
+                <input type="checkbox" name="text" value="privacy_policy" />
+                Oświadczam iż akceptuje Regulamin i Politykę Prywatności.
+            <button class="send" type="submit">Wyślij</button></div>
+        </form>
+        </div>
         </div>
        </div>
     <script src="./js/modal.js"></script>
