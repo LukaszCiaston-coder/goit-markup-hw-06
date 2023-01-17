@@ -754,11 +754,11 @@ h2 {
 }
 .form-windows{
     width: 448px;
-        height: 40px;
-        padding: 15px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-        margin-bottom: 10px;
+    height: 40px;
+    padding: 15px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 
@@ -770,12 +770,12 @@ h2 {
     border-radius: 4px;
     margin-bottom: 10px;
 }
-.form-window:hover{
-    border-color: rgba(33, 150, 243, 1)
+.form-floating:hover {
+    fill:#2196F3;
+    border-color:1px solid #2196F3;
 }
-.form-windows:hover{
-    border-color: rgba(33, 150, 243, 1)
-}
+
+
 .checkbox{
     display:flex;
     flex-direction: column;
@@ -796,4 +796,13 @@ h2 {
     border: none;
     margin-top: 30px;
 
+}
+
+.form-floating{
+    position:relative;
+}
+.form-floating>.icon1{
+    position:absolute;
+    top: 65%;
+    left: 15px;
 }
