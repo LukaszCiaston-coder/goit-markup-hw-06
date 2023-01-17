@@ -768,6 +768,7 @@ h2 {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-bottom: 10px;
+    resize: none;
 }
 
 
@@ -802,11 +803,41 @@ h2 {
     left: 15px;
 }
 
-
 input:focus-visible {
-    outline:  1px solid rgba(33, 150, 243, 1);
-    border-radius: 3px;
+    outline: 1px solid rgba(33, 150, 243, 1);
+    border-radius: 4px;
 }
-.icon1:focus-visible{
-    fill:#2196F3;
+textarea:focus-visible{
+    outline: 1px solid rgba(33, 150, 243, 1);
+    border-radius: 4px;
+}
+  .form-floating input[type="text"] {
+    padding-left: 42px;
+}
+
+  .form-floating input[type="tel"] {
+    padding-left: 42px;
+}
+
+  .form-floating input[type="email"] {
+    padding-left: 42px;
+}
+.statement{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+    margin-top: 20px;
+    color:#757575;
+}
+
+input[type="checkbox"]{
+    width: 16px;
+    height: 15px;
+    background: rgba(33, 33, 33, 1);
+    border-radius: 2px;
+    margin-right: 8px;
 }
