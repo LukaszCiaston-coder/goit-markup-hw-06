@@ -703,7 +703,7 @@ h2 {
  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
  transition-property: visibility, transform;
- transition-duration: 3s;
+ transition-duration: 1s;
  transform: translateX(-50%) translateY(-50%) scale(1);
  visibility: visible;
 
@@ -729,7 +729,7 @@ h2 {
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     transition-property: visibility, transform;
-    transition-duration: 3s;
+    transition-duration: 1s;
     transform: translateX(-50%) translateY(-50%) scale(1);
     visibility: visible;
 }
@@ -764,18 +764,25 @@ h2 {
 .form-window{
     width: 448px;
     height: 120px;
-    padding: 15px;
+    padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-bottom: 10px;
     resize: none;
+   
 }
 
+textarea{ font-size: 12px;
+    color: rgba(117, 117, 117, 0.5);
+    letter-spacing: 0.01em;
+    line-height: 1.16;
 
+}
 .checkbox{
     display:flex;
     flex-direction: column;
     text-align: center;
+   
 }
 .send-box{
     width:200px;
@@ -799,15 +806,18 @@ h2 {
 }
 .form-floating>.icon1{
     position:absolute;
-    top: 65%;
+    top: 35%;
     left: 15px;
 }
 
-input:focus-visible {
+input:focus {
     outline: 1px solid rgba(33, 150, 243, 1);
     border-radius: 4px;
 }
-textarea:focus-visible{
+input:focus~.icon1{
+    fill: rgba(33, 150, 243, 1);
+}
+textarea:focus{
     outline: 1px solid rgba(33, 150, 243, 1);
     border-radius: 4px;
 }
@@ -833,11 +843,6 @@ textarea:focus-visible{
     margin-top: 20px;
     color:#757575;
 }
-
 input[type="checkbox"]{
-    width: 16px;
-    height: 15px;
-    background: rgba(33, 33, 33, 1);
-    border-radius: 2px;
-    margin-right: 8px;
+    margin-right: 9px;
 }

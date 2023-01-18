@@ -432,26 +432,28 @@
         <div class="modal" >
             <button type="button" class="close-bg" data-modal-close>X</button>
             <p class="information">Zostaw swoje dane w formularzu poniżej</p>
-            <form>
-
+            <form name="signupform">
             <label class="form-floating">Imie 
+                <input class="form-windows" type="text" name="username"  />
                 <svg class="icon1 " width="15" height="15">
                 <use href="images/icons.svg#icon-person-black-18dp-1"></use>
             </svg>
-                <input class="form-windows" type="text" name="username"  />
+                
             </label>
 
             <label class="form-floating">Telefon
+                <input class="form-windows" type="tel" name="phone_number"  />
                 <svg class="icon1" width="15" height="15">
                     <use href="images/icons.svg#icon-phone-black-18dp-1"></use>
                 </svg>
-                <input class="form-windows" type="tel" name="phone_number"  />
+                
             </label>
             <label class="form-floating">Email
+                <input class="form-windows" type="email" name="email"  />
                 <svg class="icon1" width="15" height="15">
                     <use href="images/icons.svg#icon-email-black-18dp-1"></use>
                 </svg>
-                <input class="form-windows" type="email" name="email"  />
+                
             </label>
             <label class="form-floating">Komentarz
                 <textarea class="form-window focus" name="feedback" row="3" placeholder="Wprowadź tekst"></textarea>
@@ -459,7 +461,7 @@
             <div class="checkbox">
             <label>
                 <p class="statement"><input type="checkbox" name="text" value="privacy_policy" />
-                Oświadczam iż akceptuje <span ><a class=blue href="#"> Regulamin </a></span>  i  <span><a class=blue href="#"> Politykę Prywatności.</a></span></p>
+                Oświadczam iż akceptuje <a class=blue href="#">Regulamin</a> i <a class=blue href="#">Politykę Prywatności.</a></p>
             <button class="send-box" type="submit">Wyślij</button></div>
         </form>
         </div>
