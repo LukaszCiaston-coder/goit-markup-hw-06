@@ -770,13 +770,13 @@ h2 {
     resize: none;
    
 }
-
-textarea{ font-size: 12px;
-    color: rgba(117, 117, 117, 0.5);
+.form-window::placeholder{
+    font-size: 12px;
     letter-spacing: 0.01em;
     line-height: 1.16;
-
+    color: rgba(117, 117, 117, 0.5);
 }
+
 .checkbox{
     display: flex;
     flex-direction: center;
@@ -810,26 +810,23 @@ textarea{ font-size: 12px;
     left: 15px;
 }
 
-input:focus {
+.window-focus:focus {
     outline: 1px solid rgba(33, 150, 243, 1);
     border-radius: 4px;
 }
-input:focus~.icon1{
+.window-focus:focus~.icon1{
     fill: rgba(33, 150, 243, 1);
 }
-textarea:focus{
-    outline: 1px solid rgba(33, 150, 243, 1);
-    border-radius: 4px;
-}
-  .form-floating input[type="text"] {
+
+.form-floating input[type="text"] {
     padding-left: 42px;
 }
 
-  .form-floating input[type="tel"] {
+.form-floating input[type="tel"] {
     padding-left: 42px;
 }
 
-  .form-floating input[type="email"] {
+.form-floating input[type="email"] {
     padding-left: 42px;
 }
 .form-statement{
@@ -840,19 +837,16 @@ textarea:focus{
     margin-top: 20px;
 }
 
+.statement-box{
+    appearance:none;
+}
+
 .statement{
+    position:relative; 
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.71;
     color:#757575;
-}
-
-.statement-box{
-    appearance: none;
-}
-
-.statement{
-    position:relative;
 }
 .statement::before{
     display: block;
