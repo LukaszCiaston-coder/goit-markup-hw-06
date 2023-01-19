@@ -846,6 +846,25 @@ textarea:focus{
     line-height: 1.71;
     color:#757575;
 }
-input[type="checkbox"]{
-    margin-right: 9px;
+
+.statement-box{
+    appearance: none;
+}
+
+.statement{
+    position:relative;
+}
+.statement::before{
+    display: block;
+    position: absolute;
+    left:-24px;
+    top:4px;
+    content: "";
+    width: 16px;
+    height:15px;
+    border: 2px solid rgba(33, 33, 33, 1);
+    border-radius: 4px;
+}
+.statement-box:checked + .statement::before{
+    background-color: red;
 }
