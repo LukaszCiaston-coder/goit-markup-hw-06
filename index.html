@@ -416,57 +416,61 @@
                 </div>
                 <div class="footer-column">
                     <div class="sing-up">ZAPISZ SIĘ DO NEWSLETTERA</div>
-                        <form class="singup" name="signup_form" autocomplete="on" novalidate>
-                            <label>
-                                <input class="email-window" type="email" name="email" placeholder="E-mail" />
-                            </label>
-                            <button class="email-button" type="submit">Zapisz się <svg class="send" width="24" height="24">
+                    <form class="singup" name="signup_form" autocomplete="on" novalidate>
+                        <label>
+                            <input class="email-window" type="email" name="email" placeholder="E-mail" />
+                        </label>
+                        <button class="email-button" type="submit">Zapisz się <svg class="send" width="24" height="24">
                                 <use href="images/icons.svg#icon-icon-send"></use>
                             </svg></button>
-                        </form>
+                    </form>
                 </div>
             </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal" >
+        <div class="modal">
             <button type="button" class="close-bg" data-modal-close>X</button>
             <p class="information">Zostaw swoje dane w formularzu poniżej</p>
             <form name="signupform">
-            <label class="form-floating">Imie 
-                <input class="form-windows" type="text" name="username"  />
-                <svg class="icon1 " width="15" height="15">
-                <use href="images/icons.svg#icon-person-black-18dp-1"></use>
-            </svg>
-                
-            </label>
+                <label class="form-floating">Imie
+                    <input class="form-windows" type="text" name="username" />
+                    <svg class="icon1 " width="16" height="16">
+                        <use href="images/icons.svg#icon-person-black-18dp-1"></use>
+                    </svg>
 
-            <label class="form-floating">Telefon
-                <input class="form-windows" type="tel" name="phone_number"  />
-                <svg class="icon1" width="15" height="15">
-                    <use href="images/icons.svg#icon-phone-black-18dp-1"></use>
-                </svg>
-                
-            </label>
-            <label class="form-floating">Email
-                <input class="form-windows" type="email" name="email"  />
-                <svg class="icon1" width="15" height="15">
-                    <use href="images/icons.svg#icon-email-black-18dp-1"></use>
-                </svg>
-                
-            </label>
-            <label class="form-floating">Komentarz
-                <textarea class="form-window focus" name="feedback" row="3" placeholder="Wprowadź tekst"></textarea>
-            </label>
-            <div class="checkbox">
-            <label>
-                <p class="statement"><input type="checkbox" name="text" value="privacy_policy" />
-                Oświadczam iż akceptuje <a class=blue href="#">Regulamin</a> i <a class=blue href="#">Politykę Prywatności.</a></p>
-            <button class="send-box" type="submit">Wyślij</button></div>
-        </form>
+                </label>
+
+                <label class="form-floating">Telefon
+                    <input class="form-windows" type="tel" name="phone_number" />
+                    <svg class="icon1" width="17" height="17">
+                        <use href="images/icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+
+                </label>
+                <label class="form-floating">Email
+                    <input class="form-windows" type="email" name="email" />
+                    <svg class="icon1" width="19" height="16">
+                        <use href="images/icons.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+
+                </label>
+                <label class="form-floating">Komentarz
+                    <textarea class="form-window focus" name="feedback" placeholder="Wprowadź tekst"></textarea>
+                </label>
+                <div class="form-statement">
+                    <label>
+                        <input type="checkbox" name="text" value="privacy_policy" /></label>
+                    <p class="statement">Oświadczam iż akceptuje <a class=blue href="#">Regulamin</a> i <a class=blue
+                            href="#">Politykę Prywatności.</a></p>
+                </div>
+                <div class="checkbox">
+                    <button class="send-box" type="submit">Wyślij</button>
+                </div>
+            </form>
         </div>
-        </div>
-       </div>
+    </div>
+
     <script src="./js/modal.js"></script>
 </body>
 
