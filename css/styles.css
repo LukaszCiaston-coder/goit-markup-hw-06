@@ -731,14 +731,14 @@ h2 {
     background: rgba(0, 0, 0, 0.2);
     transition-property: visibility, transform;
     transition-duration: 1s;
-    transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(-50%)scale(1);
     visibility: visible;
 }
 
-.is-hidden  {
+.is-hidden {
     pointer-events: none;
     visibility: hidden;
-    transform: translateX(-50%) translateY(-50%) scale(0);
+    transform: translateX(-50%) translateY(-50%)scale(0);
 }
 .information{
     font-size:20px;
@@ -770,12 +770,6 @@ h2 {
     border-radius: 4px;
     resize: none;
    
-}
-.form-window::placeholder{
-    font-size: 12px;
-    letter-spacing: 0.01em;
-    line-height: 1.16;
-    color: rgba(117, 117, 117, 0.5);
 }
 
 .checkbox{
@@ -863,10 +857,11 @@ h2 {
 .statement-box:checked + .statement::before{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
     background-size: 11px 8px;
-     background-position: 1px;
+     background-position: 3px 4px;
     background-repeat:no-repeat;
     background-color: rgba(33, 150, 243, 1);
     border-radius: 2px;
+    border:none;
 }
     
 
